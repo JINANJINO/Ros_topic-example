@@ -48,6 +48,16 @@ my_rclpy_package
 
 ```cd ~/ros_lecture/src/my_rclpy_package/my_rclpy_package```
 
-만약 VSCode를 설치하였다면 ```code helloworld_publisher.py```를 통해서 파이썬 파일을 만들자.
-해당 파이썬 파일에 다음 코드를 복사해서 넣자.
-
+이후  terminal창에 ```code helloworld_publisher.py``` 를 통해서 ```helloworld_publisher.py```코드를 작성하여 넣고  ```code helloworld_subscriber.py```를 통해서 ```helloworld_subscriber.py``` 코드를 작성하여 넣은 후
+다시 기존의 package 디렉토리로 들어와서 ```setup.py``` 파이썬 파일을 ```code setup.py```를 통해서 파이썬 파일을 연다.
+이후 ```entry point```를 작성하여 넣어주어야 한다. ```entry point```는 Build 이전에 진행해주어야 하며 ```Node 이름 = file의 경로```순으로 작성해주면 된다.
+file의 경로는 ```패키지명.파이썬 파일명:main```순으로 작성해주며 되며,
+해당 파일에서는 다음과 같이 작성하면 된다.
+```
+entry_points={
+        'console_scripts': [
+            'helloworld_publisher = my_rclpy_package.helloworld_publisher:main',
+            'helloworld_subscriber = my_rclpy_package.helloworld_subscriber:main'
+        ]
+```
+최종적으로 다시 workspace 공간으로 돌아와서 ```colcon build --symlink-install```을 통해서 Build를 작업해주면 된다.
