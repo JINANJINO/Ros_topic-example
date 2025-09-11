@@ -3,3 +3,9 @@ ROS topic과 관련된 기초 예제와 관련된 코드로 Publisher와 Subscri
 가장 먼저 workspace를 생성해야 한다. Home directory에서 다음 명령어를 통해서 Work Space를 생성하자
 
 ```mkdir ros_lecture```
+
+이후에 만든 work space 공간으로 이동한 이후에 src 파일을 만들어야 한다.
+
+```cd ros_lecture```
+
+```mkdir src```
