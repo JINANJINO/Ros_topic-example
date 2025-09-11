@@ -49,3 +49,5 @@ my_rclpy_package
 ```cd ~/ros_lecture/src/my_rclpy_package/my_rclpy_package```
 
 만약 VSCode를 설치하였다면 ```code helloworld_publisher.py```를 통해서 파이썬 파일을 만들자.
+해당 파이썬 파일에 다음 코드를 복사해서 넣자.
+
