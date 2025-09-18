@@ -1,4 +1,4 @@
-# ROS Topic Example
+# 🤖 ROS Topic Example
 
 This repository provides a basic example of **ROS topic communication** using custom **Publisher** and **Subscriber** nodes.  
 The goal is to create a simple workspace, write Publisher and Subscriber code, and communicate between them via ROS topics.
