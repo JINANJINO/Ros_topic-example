@@ -3,7 +3,9 @@
 This repository provides a basic example of **ROS topic communication** using custom **Publisher** and **Subscriber** nodes.  
 The goal is to create a simple workspace, write Publisher and Subscriber code, and communicate between them via ROS topics.
 
-> For more details on this topic, please refer to the document
+https://docs.ros.org/en/humble/_images/Nodes-TopicandService.gif
+
+> 📃 For more details on this topic, please refer to the document
 https://share.google/PKZuHiYb0PJ5hXBNY
 
 ---
